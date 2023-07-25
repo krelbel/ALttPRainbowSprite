@@ -305,6 +305,9 @@ def shuffle_mail_palette(palette, spritename):
         indices.append([0]) # Baba main sprite
         indices.append([1]) # Word background
         indices.append([5,11]) # Keke bunny and flag
+    elif (spritename == 'Tunic'):
+        indices.append([10,8,9]) # Tunic's tunic
+        indices.append([7]) # Scarf
     else:
         logger.info("ERROR: unknown sprite %s" % spritename)
         return
