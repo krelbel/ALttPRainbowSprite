@@ -308,6 +308,8 @@ def shuffle_mail_palette(palette, spritename):
     elif (spritename == 'Tunic'):
         indices.append([10,8,9]) # Tunic's tunic
         indices.append([7]) # Scarf
+    elif (spritename == 'The Robot'):
+        indices.append([8,9]) # Case
     else:
         logger.info("ERROR: unknown sprite %s" % spritename)
         return
