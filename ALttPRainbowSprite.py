@@ -241,6 +241,7 @@ def shuffle_mail_palette(palette, spritename):
     indices = list()
 
     # Indices for each color set need to be in order from darkest to lightest.
+    # Maximum of 3 indices
     if (spritename == 'Renoko'):
         indices.append([1]) # Belly/stripes
         indices.append([8,9]) # Body
@@ -300,6 +301,13 @@ def shuffle_mail_palette(palette, spritename):
     elif (spritename == 'Mog'):
         indices.append([7]) # Nose/pom
         indices.append([9,8]) # Wings!
+    elif (spritename == 'Baba'):
+        indices.append([4,3,3,1,0]) # 4 is outline/text, 3s are unused color, 1 is text bg, 0 is baba skin
+    elif (spritename == 'Tunic'):
+        indices.append([10,8,9]) # Tunic's tunic
+        indices.append([7]) # Scarf
+    elif (spritename == 'The Robot'):
+        indices.append([8,9]) # Case
     else:
         logger.info("ERROR: unknown sprite %s" % spritename)
         return
