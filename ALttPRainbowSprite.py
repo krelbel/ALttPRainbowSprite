@@ -303,8 +303,6 @@ def shuffle_mail_palette(palette, spritename):
         indices.append([9,8]) # Wings!
     elif (spritename == 'Baba'):
         indices.append([4,3,3,1,0]) # 4 is outline/text, 3s are unused color, 1 is text bg, 0 is baba skin
-        indices.append([5]) # Keke bunny
-        indices.append([11]) # Flag for crystal get
     elif (spritename == 'Tunic'):
         indices.append([10,8,9]) # Tunic's tunic
         indices.append([7]) # Scarf
